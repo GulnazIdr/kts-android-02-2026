@@ -4,6 +4,7 @@ fun Order.applyDiscount(
     discountPercent: Int,
     logger: ((String) -> Unit)? = null
 ) {
+
     var newPrice: Int?
     var newProduct: Product?
 

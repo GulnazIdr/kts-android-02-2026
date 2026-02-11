@@ -3,7 +3,6 @@ package orders
 class Order(
     val id: Int
 ) : PriceCalculator {
-
     private val _products: MutableList<Product> = mutableListOf()
     val products: List<Product> get() = _products.toList()
 
