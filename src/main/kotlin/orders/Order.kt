@@ -11,7 +11,8 @@ class Order(
 
     fun addProduct(product: Product?) {
         if (product == null) return
-        _products.add(product)
+        if(_products.find { it.id == product.id } == null)
+            _products.add(product)
     }
 
     fun removeProductById(productId: Int) {
